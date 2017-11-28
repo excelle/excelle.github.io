@@ -1,3 +1,69 @@
-body {
-	background: plum;
+header {
+	min-height: 100vh;
+	display: relative;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(images/peignault-laurent-119950.jpg);
+	background-size: cover;
+		
+}
+
+header h1:nth-child(1):before {
+	color: blue;
+	content: '.';
+}
+
+.lastName {
+	margin-top: 50px;
+	content: '.';
+	display: absolute;
+}
+
+.direction {
+	flex-direction: column;
+}
+
+.headerNav {
+	flex-direction: column;
+	justify-content: center;
+}
+
+header nav {
+	margin-left: auto;
+}
+
+.headerNavi {
+	justify-content: space-between;
+	width: 700px;
+}
+
+.headTitles {
+	flex-direction: column;
+	margin: auto 0;
+}
+
+.headerSocial ul {
+	margin: 0;
+	padding: 0;
+}
+
+.headerSocial li {
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	font-size: 2em;
+	width: 50px;
+	height: 50px;
+	// padding: 10px 10px;
+	margin: 10px;
+	background: darkcyan;
+	border-radius: 10px;
+}
+
+.headerSocials {
+	flex-direction: row;
+}
+
+.mainName,
+header h2,
+header h3 {
+	margin: 0;
 }

@@ -172,5 +172,111 @@ template {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-body {
+header {
+  min-height: 100vh;
+  display: relative;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url(images/peignault-laurent-119950.jpg);
+  background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(images/peignault-laurent-119950.jpg);
+  background: -o-linear-gradient(right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(images/peignault-laurent-119950.jpg);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(images/peignault-laurent-119950.jpg);
+  background-size: cover; }
+
+header h1:nth-child(1):before {
+  color: blue;
+  content: '.'; }
+
+.lastName {
+  margin-top: 50px;
+  content: '.';
+  display: absolute; }
+
+.direction {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.headerNav {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+header nav {
+  margin-left: auto; }
+
+.headerNavi {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 700px; }
+
+.headTitles {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: auto 0; }
+
+.headerSocial ul {
+  margin: 0;
+  padding: 0; }
+
+.headerSocial li {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+  font-size: 2em;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background: darkcyan;
+  border-radius: 10px; }
+
+.headerSocials {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.mainName,
+header h2,
+header h3 {
+  margin: 0; }
+
+.services {
   background: plum; }
+
+.services h2 {
+  background: darkcyan; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+img {
+  width: 100%; }
+
+.wrapper {
+  max-width: 80%;
+  margin: 0 auto; }
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
