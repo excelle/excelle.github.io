@@ -1,7 +1,62 @@
-.services {
-	background: plum;
+.service {
+	background: black;
+	padding: 100px 0;
 }
 
-.services h2 {
-	background: darkcyan;
+.services {
+	flex-direction: column;
+	margin: 50px 0;
+}
+
+.services h2 span {
+	color: plum;
+}
+
+.services h2 span::after {
+	background: plum;
+	left: 0;
+}
+
+.services h2 span::before {
+	background: plum;
+	right: 60%;
+}
+
+.servicesContainer {
+	margin-top: 50px;
+	flex-direction: row;
+	// margin-bottom: 10px;
+}
+
+.serviceIcon {
+	width: 100px;
+}
+
+.serviceImg {
+	height: 120px;
+}
+
+.serviceList {
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	margin: 0 10px;
+	border: 1px solid black;
+	width: 25%;
+}
+
+.serviceList:hover {
+	// border: 1px solid #f5f5f5;
+	border-radius: 5px;
+	background: #111111;
+}
+
+.serviceName {
+	margin: 20px 0;
+	font-size: 1.5em;
+}
+
+.serviceList p:nth-child(3) {
+	color: #959595;
 }

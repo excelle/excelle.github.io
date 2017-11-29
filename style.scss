@@ -6,9 +6,14 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 @import 'import/header';
 @import 'import/services';
+@import 'import/who';
+@import 'import/skills';
+@import 'import/work';
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	background: #24292d;
 }
 
 img {
@@ -22,4 +27,9 @@ img {
 
 .flex {
 	display: flex;
+}
+
+h2 {
+	font-size: 3em;
+	margin: 0;
 }

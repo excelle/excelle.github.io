@@ -1,0 +1,58 @@
+.works {
+	background: black;
+	padding: 100px 0;
+}
+
+.work {
+	width: 100%;
+	flex-direction: row;
+}
+
+.work h2 span {
+	color: #2a68c0;
+}
+
+.work h2 span::after {
+	background: #2a68c0;
+	left: 0;
+}
+
+.work h2 span::before {
+	background: #2a68c0;
+	right: 40%;
+}
+
+.workTitle {
+	margin-right: auto;
+}
+
+.workCats {
+	width: 30%;
+}
+
+.workCat {
+	width: 100%;
+	text-transform: uppercase;
+	margin-left: auto;
+	list-style: none;
+	justify-content: space-between;
+}
+
+.workGallery {
+	margin-top: 100px;
+	flex-wrap: wrap;
+	flex-direction: column;
+	flex-flow: row wrap;
+}
+
+.workGallery figure {
+	flex: auto;
+	width: 400px;
+	height: 400px;
+	margin: .1vw;
+}
+
+.workGallery img {
+	object-fit: cover;
+	height: auto;
+}

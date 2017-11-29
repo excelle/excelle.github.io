@@ -7,11 +7,13 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 	<script src="https://use.fontawesome.com/8a3140df9a.js"></script>
 </head>
 <body>
 	<header>
-		<div class="flex nav header">
+	<div class="wrapper flex header">	
+		<div class="flex nav">
 			<h1>excelle</h1>
 			<h1 class="lastName">escalada</h1>
 			<nav class="flex headerNav">
@@ -26,9 +28,9 @@
 			</nav>
 		</div>
 		<div class="flex headTitles">
-			<h2>Hello! I'm</h2>
-			<h1 class="mainName">EXCELLE ESCALADA</h1>
-			<h3>Professional* Web Designer & Developer</h3>
+			<h3>Hello! I'm</h3>
+			<h1 class="mainName">EXCELLE <span>ESCALADA</span></h1>
+			<h4>Web Designer & Developer</h4>
 			<div class="headerSocial">
 				<ul class="flex headerSocials">
 					<li class="flex">
@@ -49,81 +51,150 @@
 				</ul>
 			</div>
 		</div>
+	</div>	
 	</header>
 		
-	<section>
-		<h2>Who i am</h2>
-		<p><span>Hello everyone,</span> My name is Excelle Escalada</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, vitae nostrum magni tempora repellendus tenetur asperiores mollitia dignissimos libero hic?</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt fugit perferendis fuga nesciunt corporis voluptatem, sequi delectus sint eaque eveniet?</p>
-		<button>Download resume</button>
+	<section class="flex who wrapper">
+		<div class="whois">
+			<h2>Who <span>i am</span></h2>
+			<p class="whoHello"><span>Hello everyone,</span> My name is Excelle Escalada</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, vitae nostrum magni tempora repellendus tenetur asperiores mollitia dignissimos libero hic?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt fugit perferendis fuga nesciunt corporis voluptatem, sequi delectus sint eaque eveniet?</p>
+			<button>Download resume</button>
+		</div>
+		<div class="flex headshot">
+			<img src="images/excellecaa.jpg" alt="Excelle Escalada">
+		</div>
 	</section>
 
-	<section class="services">
-		<h2>What Services i offer</h2>
-		<div>
-			<div>
-				<img src="images/noun_862296_cc.svg" alt="">
-				<i></i>
-				<p class="serviceName"></p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dolores.</p>
-			</div>
-			<div>
-				<i></i>
-				<p class="serviceName"></p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, vel.</p>
-			</div>
-			<div>
-				<i></i>
-				<p class="serviceName"></p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, possimus.</p>
-			</div>
-			<div>
-				<i></i>
-				<p class="serviceName"></p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptas.</p>
+	<section class="service">
+		<div class="wrapper flex services">
+			<h2>What <span>Services</span> i offer</h2>
+			<div class="flex servicesContainer">
+				<div class="flex serviceList">
+					<div class="serviceImg">
+						<img class="serviceIcon" src="images/photo-camera.svg" alt="Photography">
+					</div>
+					<p class="serviceName">Photography</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, dolores.</p>
+				</div>
+				<div class="flex serviceList">
+					<div class="serviceImg">
+						<img class="serviceIcon" src="images/website-design-symbol.svg" alt="Web Design">
+					</div>
+					<p class="serviceName">Web Design</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, vel. Consectetur adipisicing elit.</p>
+				</div>
+				<div class="flex serviceList">
+					<div class="serviceImg">
+						<img class="serviceIcon" src="images/programming.svg" alt="Web Development">
+					</div>
+					<p class="serviceName">Web Development</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, possimus.</p>
+				</div>
+				<div class="flex serviceList">
+					<div class="serviceImg">
+						<img class="serviceIcon" src="images/video-camera.svg" alt="Video">
+					</div>
+					<p class="serviceName">...</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptas.</p>
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<section>
-		<div>
-			<h2>What Skills i have</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas recusandae molestiae veritatis alias? Ex optio molestiae libero cum aliquid aliquam minus, non nesciunt! Obcaecati, cumque.</p>
-		</div>
-		<div>
-			<div>
-				<p></p>
-				<p></p>
+		<div class="wrapper flex skills">	
+			<div class="skill">
+				<h2>What <span>Skills</span> i have</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas recusandae molestiae veritatis alias? Ex optio molestiae libero cum aliquid aliquam minus, non nesciunt! Obcaecati, cumque.</p>
 			</div>
-			<div>
-				<p></p>
-				<p></p>
-			</div>
-			<div>
-				<p></p>
-				<p></p>
-			</div>
-			<div>
-				<p></p>
-				<p></p>
-			</div>
+			<div class="skill">
+				<div class="flex skillList">
+					<p class="photography">Photography</p>
+					<p class="percent">70%</p>
+				</div>
+				<div class="flex skillList">
+					<p class="webdesign">Web Design</p>
+					<p class="percent">60%</p>
+				</div>
+				<div class="flex skillList">
+					<p class="webdev">Web Development</p>
+					<p class="percent">80%</p>
+				</div>
+				<div class="flex skillList">
+					<p class="film">Film Making</p>
+					<p class="percent">60%</p>
+				</div>
+			</div>	
 		</div>	
 	</section>
 
-	<section>
-		<div>
-			<h2>My Creative Work</h2>
-		</div>
-		<div>
-			<ul>
-				<li>All</li>
-				<li>Web Design</li>
-				<li>Wordpress</li>
-				<li>Branding</li>
-			</ul>
-		</div>
+	<section class="works">
+		<div class="wrapper flex work">
+			<div class="workTitle">
+				<h2>My Creative <span>Work</span></h2>
+			</div>
+			<div class="flex workCats">
+				<ul class="flex workCat">
+					<li>All</li>
+					<li>Web Design</li>
+					<li>Wordpress</li>
+					<li>Branding</li>
+				</ul>
+			</div>
+		</div>	
 		<!-- gallery *skipping* -->
+		<div class="wrapper flex workGallery">
+			<figure>
+				<img src="images/peignault-laurent-119950.jpg" alt="">
+			</figure>
+			<figcaption>
+				<p></p>
+				<p></p>
+			</figcaption>
+			<figure>
+				<img src="images/peignault-laurent-119950.jpg" alt="">
+			</figure>
+			<figcaption>
+				<p></p>
+				<p></p>
+			</figcaption>
+		
+			<figure>
+				<img src="images/peignault-laurent-119950.jpg" alt="">
+			</figure>
+			<figcaption>
+				<p></p>
+				<p></p>
+			</figcaption>
+		
+			<figure>
+				<img src="images/peignault-laurent-119950.jpg" alt="">
+			</figure>
+			<figcaption>
+				<p></p>
+				<p></p>
+			</figcaption>
+		
+			<figure>
+				<img src="images/peignault-laurent-119950.jpg" alt="">
+			</figure>
+			<figcaption>
+				<p></p>
+				<p></p>
+			</figcaption>
+		
+			<figure>
+				<img src="images/peignault-laurent-119950.jpg" alt="">
+			</figure>
+			<figcaption>
+				<p></p>
+				<p></p>
+			</figcaption>
+		</div>
+
+
 	</section>
 
 	<section>
@@ -227,4 +298,34 @@
 		</div>
 	</footer>
 </body>
+
+
+<!-- 
+
+Topic Revisiting Checklist:
+-Display & Positioning
+-Before & After (used for section's h2 lines)
+
+-Forms
+-Transitions
+-Animations
+-SVG (Used for services icons)
+
+ -->
+
+
+ <!-- 
+Credits:
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/chris-veigt" title="Chris Veigt">Chris Veigt</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+
+  -->
 </html>
