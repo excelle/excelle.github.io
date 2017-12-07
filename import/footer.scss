@@ -1,0 +1,77 @@
+footer {
+	background: linear-gradient(45deg, rgba(53, 181, 208, .8), rgba(54, 223, 210, .8)), url(images/peignault-laurent-119950.jpg);
+	background-size: cover;
+	position: relative;
+
+}
+
+.contact {
+	background: black;
+	color: white;
+	justify-content: space-between;
+	padding: 50px;
+	position: absolute;
+	top: -120px;
+	width: 100%;
+}
+
+.contact h3 {
+	margin: 0;
+	// padding: 50px 0 20px 40px;
+}
+
+.contactLeft {
+	flex-direction: column;
+	width: 50%;
+	padding-right: 20px;
+}
+
+.cForm {
+	flex-direction: column;
+}
+
+.contactContent {
+	margin-top: 10px;
+	justify-content: space-between;
+	// flex-direction: column;
+}
+
+.contactRight {
+	width: 50%;
+}
+
+input,
+textarea {
+	height: 50px;
+	border-radius: 5px;
+	border: 2px solid #fbfbfb;
+	background: #24292d;
+	font-family: 'Poppins', sans-serif;
+	color: #fd58a5;
+	// margin: 15px;
+	margin-left: 0;
+	outline: none;
+  padding: 10px 10px;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type=text]:focus {
+	border: #fd58a5 solid 2px;
+}
+
+textarea:focus {
+	box-sizing: border-box;
+	border: #fd58a5 solid 2px;
+	outline: none;
+}
+
+.cFormL {
+	width: 45%;
+}
+
+.cFormR {
+	min-width: 50%;
+}

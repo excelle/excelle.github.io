@@ -4,11 +4,16 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+@import 'import/fontawesome';
 @import 'import/header';
 @import 'import/services';
 @import 'import/who';
 @import 'import/skills';
 @import 'import/work';
+@import 'import/numbers';
+@import 'import/client';
+@import 'import/used';
+@import 'import/footer';
 
 body {
 	font-family: 'Poppins', sans-serif;
@@ -32,4 +37,8 @@ img {
 h2 {
 	font-size: 3em;
 	margin: 0;
+}
+
+a {
+  color: white;
 }

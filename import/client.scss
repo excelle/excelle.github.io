@@ -1,0 +1,48 @@
+.client {
+	flex-direction: column;
+	padding: 100px 0;
+	align-items: center;
+}
+
+.client h2 span {
+	color: #43c0d2;
+}
+
+.client h2 span::after {
+	background: #43c0d2;
+	left: 0;
+}
+
+.client h2 span::before {
+	background: #43c0d2;
+	right: 40%;
+}
+
+.clients {
+	margin-top: 50px;
+	justify-content: space-between;
+}
+
+.clientBox {
+	flex-direction: column;
+	width: 30%;
+	background: #54595e;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.clientBox div:nth-child(2) {
+	margin-left: 20px;
+}
+
+.clientImg {
+	width: 100px;
+	border: none;
+	border-radius: 100px;
+}
+
+.clientImg img {
+	object-fit: cover;
+	border-radius: 100px;
+	diplay: block;
+}
