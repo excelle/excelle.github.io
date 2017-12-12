@@ -22,8 +22,12 @@ footer {
 
 .contactLeft {
 	flex-direction: column;
-	width: 50%;
+	width: 65%;
 	padding-right: 20px;
+}
+
+form {
+	width: 100%;
 }
 
 .cForm {
@@ -37,7 +41,18 @@ footer {
 }
 
 .contactRight {
-	width: 50%;
+	width: 35%;
+	position: relative;
+}
+
+.contactRight:before {
+	content: '';
+	background: white;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	width: 1px;
+
 }
 
 input,
@@ -52,13 +67,16 @@ textarea {
 	margin-left: 0;
 	outline: none;
   padding: 10px 10px;
+  margin-bottom: 20px;
+
 }
 
 textarea {
-  height: 100px;
+  height: 120px;
 }
 
-input[type=text]:focus {
+input[type=text]:focus,
+input[type=email]:focus {
 	border: #fd58a5 solid 2px;
 }
 
@@ -74,4 +92,71 @@ textarea:focus {
 
 .cFormR {
 	min-width: 50%;
+}
+
+.contactDetails {
+
+}
+
+.contactDetails i {
+	margin: 20px 0;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+}
+
+.contacts p:nth-child(1) {
+	font-weight: bolder;
+}
+
+.contacts div:nth-child(2	) {
+	border-bottom: 1px solid grey;
+}
+
+
+.fa-map-marker {
+	font-size: 500px;
+}
+
+footer h3 {
+	padding-bottom: 20px;
+	position: relative;
+	font-size: 30px;
+}
+
+footer h3:after {
+	position: absolute;
+	content: '';
+	width: 50px;
+	height: 4px;
+	background: #fd58a5;
+	bottom: 10px;
+	left: 0;
+	border-radius: 50px;
+}
+
+footer h3:before {
+	position: absolute;
+	content: '';
+	width: 10px;
+	height: 4px;
+	background: #fd58a5;
+	bottom: 10px;
+	right: 92%;
+	border-radius: 50px;
+}
+
+input[type=submit] {
+	width: 150px;
+	border-radius: 3px;
+	border: none;
+	padding: 10px 10px;
+	background: #fd58a5;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+input[type=submit]:hover {
+	cursor: pointer;
 }

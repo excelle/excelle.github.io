@@ -1,24 +1,14 @@
 header {
+	padding-top: 30px;
 	min-height: 100vh;
 	display: relative;
 	background: linear-gradient(to left, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), url(images/excelleca.jpg);
-	background-size: cover;	
-}
-
-header h1:nth-child(1):before {
-	color: blue;
-	content: '.';
+	background-size: cover;
 }
 
 .header {
 	flex-direction: column;
 	min-height: 100vh;
-}
-
-.lastName {
-	margin-top: 50px;
-	content: '.';
-	display: absolute;
 }
 
 .direction {
@@ -32,6 +22,7 @@ header h1:nth-child(1):before {
 
 header nav {
 	margin-left: auto;
+	text-transform: uppercase;
 }
 
 .headerNavi {
@@ -66,7 +57,7 @@ header nav {
 
 .headerSocial li:hover {
 	// transform: rotate(0deg);
-	background-color: transparent; 
+	background-color: transparent;
 }
 
 .headerSocial li:hover i {

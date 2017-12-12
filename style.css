@@ -172,6 +172,19 @@ template {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
 @font-face {
   font-family: 'FontAwesome';
   src: url("fonts/fontawesome-webfont.eot?v=4.7.0");
@@ -203,7 +216,17 @@ template {
 .fa-instagram:before {
   content: "\f16d"; }
 
+.fa-map-marker:before {
+  content: "\f041"; }
+
+.fa-phone:before {
+  content: "\f095"; }
+
+.fa-envelope:before {
+  content: "\f0e0"; }
+
 header {
+  padding-top: 30px;
   min-height: 100vh;
   display: relative;
   background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.9))), url(images/excelleca.jpg);
@@ -212,10 +235,6 @@ header {
   background: linear-gradient(to left, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), url(images/excelleca.jpg);
   background-size: cover; }
 
-header h1:nth-child(1):before {
-  color: blue;
-  content: '.'; }
-
 .header {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -223,11 +242,6 @@ header h1:nth-child(1):before {
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh; }
-
-.lastName {
-  margin-top: 50px;
-  content: '.';
-  display: absolute; }
 
 .direction {
   -webkit-box-orient: vertical;
@@ -248,7 +262,8 @@ header h1:nth-child(1):before {
   justify-content: center; }
 
 header nav {
-  margin-left: auto; }
+  margin-left: auto;
+  text-transform: uppercase; }
 
 .headerNavi {
   -webkit-box-pack: justify;
@@ -442,7 +457,7 @@ h2 span::before {
   height: 6px;
   background: #36bdd0;
   bottom: -10px;
-  right: 40%;
+  right: 30%;
   border-radius: 50px; }
 
 .whoHello {
@@ -799,8 +814,11 @@ footer {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 50%;
+  width: 65%;
   padding-right: 20px; }
+
+form {
+  width: 100%; }
 
 .cForm {
   -webkit-box-orient: vertical;
@@ -817,7 +835,16 @@ footer {
   justify-content: space-between; }
 
 .contactRight {
-  width: 50%; }
+  width: 35%;
+  position: relative; }
+
+.contactRight:before {
+  content: '';
+  background: white;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 1px; }
 
 input,
 textarea {
@@ -829,12 +856,14 @@ textarea {
   color: #fd58a5;
   margin-left: 0;
   outline: none;
-  padding: 10px 10px; }
+  padding: 10px 10px;
+  margin-bottom: 20px; }
 
 textarea {
-  height: 100px; }
+  height: 120px; }
 
-input[type=text]:focus {
+input[type=text]:focus,
+input[type=email]:focus {
   border: #fd58a5 solid 2px; }
 
 textarea:focus {
@@ -848,6 +877,59 @@ textarea:focus {
 
 .cFormR {
   min-width: 50%; }
+
+.contactDetails i {
+  margin: 20px 0;
+  font-size: 30px;
+  width: 50px;
+  text-align: center; }
+
+.contacts p:nth-child(1) {
+  font-weight: bolder; }
+
+.contacts div:nth-child(2) {
+  border-bottom: 1px solid grey; }
+
+.fa-map-marker {
+  font-size: 500px; }
+
+footer h3 {
+  padding-bottom: 20px;
+  position: relative;
+  font-size: 30px; }
+
+footer h3:after {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 4px;
+  background: #fd58a5;
+  bottom: 10px;
+  left: 0;
+  border-radius: 50px; }
+
+footer h3:before {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 4px;
+  background: #fd58a5;
+  bottom: 10px;
+  right: 92%;
+  border-radius: 50px; }
+
+input[type=submit] {
+  width: 150px;
+  border-radius: 3px;
+  border: none;
+  padding: 10px 10px;
+  background: #fd58a5;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+input[type=submit]:hover {
+  cursor: pointer; }
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -872,4 +954,5 @@ h2 {
   margin: 0; }
 
 a {
-  color: white; }
+  color: white;
+  text-decoration: none; }

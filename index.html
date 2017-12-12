@@ -14,16 +14,14 @@
 	<header>
 	<div class="wrapper flex header">
 		<div class="flex nav">
-			<h1>excelle</h1>
-			<h1 class="lastName">escalada</h1>
 			<nav class="flex headerNav">
 				<ul class="flex headerNavi">
-					<li class="flex">Home</li>
-					<li class="flex">About Me</li>
-					<li class="flex">Services</li>
-					<li class="flex">Portfolio</li>
-					<li class="flex">Contact</li>
-					<li class="flex">Hire Me, maybe?</li>
+					<li class="flex"><a href="">Home</a></li>
+					<li class="flex"><a href="#about">About Me</a></li>
+					<li class="flex"><a href="#services">Services</a></li>
+					<li class="flex"><a href="#portfolio">Portfolio</a></li>
+					<li class="flex"><a href="#contact">Contact</a></li>
+					<li class="flex"><a href="">Hire Me, maybe?</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -43,7 +41,7 @@
 						<a href="instagram.com/excesc"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 					</li>
 					<li class="flex">
-						<a href=""><i class="fa fa-linkedin" aria-hidden="true"></i>
+						<a href="https://www.linkedin.com/in/excelle/"><i class="fa fa-linkedin" aria-hidden="true"></i>
 					</li></a>
 					<li class="flex">
 						<a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -54,7 +52,7 @@
 	</div>
 	</header>
 
-	<section class="flex who wrapper">
+	<section id="about" class="flex who wrapper">
 		<div class="whois">
 			<h2>Who <span>i am</span></h2>
 			<p class="whoHello"><span>Hello everyone,</span> My name is Excelle Escalada</p>
@@ -67,7 +65,7 @@
 		</div>
 	</section>
 
-	<section class="service">
+	<section id="services" class="service">
 		<div class="wrapper flex services">
 			<h2>What <span>Services</span> i offer</h2>
 			<div class="flex servicesContainer">
@@ -96,7 +94,7 @@
 					<div class="serviceImg">
 						<img class="serviceIcon" src="images/video-camera.svg" alt="Video">
 					</div>
-					<p class="serviceName">...</p>
+					<p class="serviceName">Film Making</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptas.</p>
 				</div>
 			</div>
@@ -130,7 +128,7 @@
 		</div>
 	</section>
 
-	<section class="works">
+	<section id="portfolio" class="works">
 		<div class="wrapper flex work">
 			<div class="workTitle">
 				<h2>My Creative <span>Work</span></h2>
@@ -291,54 +289,66 @@
 		<!-- <i class="fa fa-map-marker" aria-hidden="true"></i> -->
 	</section>
 
-	<footer class="wrapper">
+	<footer id="contact" class="wrapper">
 		<div class="flex contact">
 			<div class="flex contactLeft">
 				<h3>Get in touch</h3>
-				<div class="flex contactContent">
-					<form action=""></form>
+					<form class="flex contactContent" action="http://www.focuspocus.io/magic/e58891130e7ecfe777f49e81767a89d2" method="POST" enctype="multipart/form-data">
 					<div class="flex cForm cFormL">
-						<input type="text" class="name" placeholder="Full name">
-						<input type="email" class="email" placeholder="Email address">
-						<input type="text" class="subject" placeholder="subject">
+						<label class="visuallyhidden" for="name">Name</label>
+						<input type="text" name="Name" class="name" placeholder="Full name">
+						<input type="email" name="Email" class="email" placeholder="Email address">
+						<input type="text" name="Subject" class="subject" placeholder="Subject">
 					</div>
 					<div class="flex cForm cFormR">
-						<textarea placeholder="Your message"></textarea>
-						<button class="contactButton">SUBMIT</button>
+						<textarea name="Message" placeholder="Your message"></textarea>
+						<input type="submit" value="Submit">
 					</div>
-				</div>
+				</form>
 			</div>
 			<div class="contactRight">
-				<div>
+				<div class="flex contactDetails">
 					<div>
-						<i class="fa fa-facebook" aria-hidden="true"></i>
+						<i class="fa fa-map-marker" aria-hidden="true"></i>
 					</div>
-					<div>
+					<div class="contacts">
 						<p>Location</p>
-						<p>...</p>
+						<p>Scarborough, Ontario</p>
 					</div>
 				</div>
-				<div>
+				<div class="flex contactDetails">
 					<div>
-						<i></i>
+						<i class="fa fa-phone" aria-hidden="true"></i>
 					</div>
-					<div>
+					<div class="contacts">
 						<p>Phone Number</p>
-						<p>+1234567898</p>
+						<a href="tel:+14168313094"><p>+1 416 831 3094</p></a>
 					</div>
 				</div>
-				<div>
+				<div class="flex contactDetails">
 					<div>
-						<i></i>
+						<i class="fa fa-envelope" aria-hidden="true"></i>
 					</div>
-					<div>
+					<div class="contacts">
 						<p>Email Address</p>
-						<p>hi@excelle.ca</p>
+						<a href="mailto:hello@excelle.ca"><p>hello@excelle.ca</p></a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+<script>
+    $(function() {
+        $('a').smoothScroll({
+            offset: 100
+        });
+    });
+</script>
+
 </body>
 
 
