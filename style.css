@@ -225,6 +225,44 @@ template {
 .fa-envelope:before {
   content: "\f0e0"; }
 
+@media only screen and (max-width: 600px) {
+  .headerNavi {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .headerNavi li {
+    padding: 10px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; } }
+
+@media only screen and (min-width: 600px) {
+  .headerNavi {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .headerNavi li {
+    padding: 10px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; } }
+
+@media only screen and (min-width: 992px) {
+  .headerNavi {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; } }
+
+@media only screen and (min-width: 1200px) {
+  .headerNavi {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 700px; } }
+
 header {
   padding-top: 30px;
   min-height: 100vh;
@@ -257,16 +295,6 @@ header {
   -ms-flex-pack: center;
   justify-content: center; }
 
-header nav {
-  margin-left: auto;
-  text-transform: uppercase; }
-
-.headerNavi {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 700px; }
-
 .headTitles {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -278,26 +306,9 @@ header nav {
   margin: 0;
   padding: 0; }
 
-.headerSocial li {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  list-style: none;
-  font-size: 2em;
-  width: 50px;
-  height: 50px;
-  margin: 30px 10px;
-  background: darkcyan;
-  border-radius: 10px; }
+header nav {
+  margin-left: auto;
+  text-transform: uppercase; }
 
 .headerSocial li:hover {
   background-color: transparent; }
@@ -321,6 +332,27 @@ header nav {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row; }
+
+.headerSocial li {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+  font-size: 2em;
+  width: 50px;
+  height: 50px;
+  margin: 30px 10px;
+  background: darkcyan;
+  border-radius: 10px; }
 
 .mainName,
 header h3,
@@ -400,6 +432,29 @@ header h3 {
 
 .serviceList p:nth-child(3) {
   color: #959595; }
+
+@media only screen and (max-width: 600px) {
+  .who {
+    background: #24292d;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 100vh; } }
+
+@media only screen and (min-width: 600px) {
+  .who {
+    min-height: 100vh; } }
+
+@media only screen and (min-width: 992px) {
+  .who {
+    min-height: 400px; } }
 
 .who {
   background: #24292d;
@@ -838,6 +893,84 @@ h2 span::before {
   left: 500px;
   color: red;
   font-size: 3.5em; }
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .contactContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .contactLeft {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 100%;
+    padding-right: 20px; }
+  .cFormL {
+    width: 100%; }
+  .cFormR {
+    min-width: 100%; }
+  input,
+  textarea {
+    width: 350px; } }
+
+@media only screen and (min-width: 600px) {
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .contactContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  input,
+  textarea {
+    width: 350px; } }
+
+@media only screen and (min-width: 768px) {
+  .contactContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  input,
+  textarea {
+    width: 400px; } }
+
+@media only screen and (min-width: 992px) {
+  .contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .contactContent {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  input,
+  textarea {
+    width: 100%; } }
+
+@media only screen and (min-width: 1200px) {
+  .contact {
+    background: black;
+    color: white;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 50px;
+    position: absolute;
+    top: -120px;
+    width: 100%; } }
 
 footer {
   background: -webkit-linear-gradient(45deg, rgba(53, 181, 208, 0.8), rgba(54, 223, 210, 0.8)), url(images/peignault-laurent-119950.jpg);

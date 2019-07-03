@@ -1,8 +1,97 @@
+@media only screen and (max-width: 600px) {
+
+	.contact {
+		flex-direction: column;
+	}
+
+	.contactContent {
+		flex-direction: column;
+	}
+
+	.contactLeft {
+		flex-direction: column;
+		min-width: 100%;
+		padding-right: 20px;
+	}
+
+	.cFormL {
+		width: 100%;
+	}
+
+	.cFormR {
+		min-width: 100%;
+	}
+
+	input,
+	textarea {
+		width: 350px;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	
+	.contact {
+		flex-direction: column;
+	}
+
+	.contactContent {
+		flex-direction: column;
+	}
+
+	input,
+	textarea {
+		width: 350px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	
+
+	.contactContent {
+		flex-direction: column;
+	}
+
+	input,
+	textarea {
+		width: 400px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	
+	.contact {
+		flex-direction: row;
+	}
+
+	.contactContent {
+		flex-direction: row;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+	}
+
+} 
+
+
+@media only screen and (min-width: 1200px) {
+	
+	.contact {
+		background: black;
+		color: white;
+		justify-content: space-between;
+		padding: 50px;
+		position: absolute;
+		top: -120px;
+		width: 100%;
+	}
+}
+
 footer {
 	background: linear-gradient(45deg, rgba(53, 181, 208, .8), rgba(54, 223, 210, .8)), url(images/peignault-laurent-119950.jpg);
 	background-size: cover;
 	position: relative;
-
 }
 
 .contact {
@@ -66,9 +155,8 @@ textarea {
 	// margin: 15px;
 	margin-left: 0;
 	outline: none;
-  padding: 10px 10px;
-  margin-bottom: 20px;
-
+  	padding: 10px 10px;
+ 	margin-bottom: 20px;
 }
 
 textarea {
